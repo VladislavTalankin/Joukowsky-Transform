@@ -29,20 +29,7 @@ namespace Joukowsky_transform
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Line vert = new Line();
-            vert.X1 = Math.Floor(Panel.ActualWidth / 2);
-            vert.X2 = Math.Floor(Panel.ActualWidth / 2);
-            vert.Y1 = 0;
-            vert.Y2 = Math.Floor(Panel.ActualHeight);
-            vert.Stroke = Brushes.Black;
-            Panel.Children.Add(vert);
-            Line hor = new Line();
-            hor.X1 = 0;
-            hor.X2 = Math.Floor(Panel.ActualWidth);
-            hor.Y1 = -Math.Floor(Panel.ActualHeight / 2);
-            hor.Y2 = -Math.Floor(Panel.ActualHeight / 2);
-            hor.Stroke = Brushes.Black;
-            Panel.Children.Add(hor);
+            
         }
 
         void drawline(Complex start, Complex end)
@@ -50,11 +37,30 @@ namespace Joukowsky_transform
             Line dline = new Line();
             dline.Stroke = Brushes.Blue;
             dline.StrokeThickness = 5;
-            dline.X1 = start.Real * 500 + Math.Floor(Panel.ActualWidth / 2);
-            dline.X2 = end.Real * 500 + Math.Floor(Panel.ActualWidth / 2);
-            dline.Y1 = start.Imaginary * 500 - Math.Floor(Panel.ActualHeight / 2);
-            dline.Y2 = end.Imaginary * 500 - Math.Floor(Panel.ActualHeight / 2);
-            Panel.Children.Add(dline);
+            dline.X1 = start.Real * 500 + Math.Floor(MainPanel.ActualWidth / 2);
+            dline.X2 = end.Real * 500 + Math.Floor(MainPanel.ActualWidth / 2);
+            dline.Y1 = start.Imaginary * 500 - Math.Floor(MainPanel.ActualHeight / 2);
+            dline.Y2 = end.Imaginary * 500 - Math.Floor(MainPanel.ActualHeight / 2);
+            MainPanel.Children.Add(dline);
+        }
+
+        void Cln()
+        {
+            MainPanel.Children.Clear();
+            Line vert = new Line();
+            vert.X1 = Math.Floor(MainPanel.ActualWidth / 2);
+            vert.X2 = Math.Floor(MainPanel.ActualWidth / 2);
+            vert.Y1 = 0;
+            vert.Y2 = Math.Floor(MainPanel.ActualHeight);
+            vert.Stroke = Brushes.Black;
+            MainPanel.Children.Add(vert);
+            Line hor = new Line();
+            hor.X1 = 0;
+            hor.X2 = Math.Floor(MainPanel.ActualWidth);
+            hor.Y1 = -Math.Floor(MainPanel.ActualHeight / 2);
+            hor.Y2 = -Math.Floor(MainPanel.ActualHeight / 2);
+            hor.Stroke = Brushes.Black;
+            MainPanel.Children.Add(hor);
         }
 
         public Complex S1(Complex z)
@@ -74,16 +80,16 @@ namespace Joukowsky_transform
             
             return S3(S2(S1(z)));
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Cln();
             double phi = 0;
             double h = (2 * Math.PI) / source.Length;
-            double c = -0.05;
-            double k = -0.05;
+            double c = Convert.ToDouble(centerX.Text);
+            double k = Convert.ToDouble(centerY.Text);
             for (int i = 0; i < source.Length; i++)
             {
-                source[i] = Complex.FromPolarCoordinates(1.05, phi);
+                source[i] = Complex.FromPolarCoordinates(Convert.ToDouble(circleR.Text), phi);
                 source[i] = new Complex(source[i].Real + c, source[i].Imaginary + k);
                 phi += h;
             }

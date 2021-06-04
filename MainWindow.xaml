@@ -11,8 +11,14 @@
             <RowDefinition Height="50"/>
             <RowDefinition />
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="1" Name="Panel"/>
-        <Button Content="Преобразовать" HorizontalAlignment="Left" Margin="10,21,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <StackPanel Grid.Row="1" Name="MainPanel"/>
+        <Button Content="Преобразовать" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click"/>
+        <TextBox Name="centerX" HorizontalAlignment="Left" Height="20" Margin="194,21,0,0" TextWrapping="Wrap" Text="-0,05" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="centerY" HorizontalAlignment="Left" Height="20" Margin="348,20,0,0" TextWrapping="Wrap" Text="-0,05" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="circleR"  HorizontalAlignment="Left" Height="20" Margin="502,21,0,0" TextWrapping="Wrap" Text="1,05" VerticalAlignment="Top" Width="120"/>
+        <Label Content="X: " HorizontalAlignment="Left" Margin="165,17,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.816,0.154" Width="24"/>
+        <Label Content="Y: " HorizontalAlignment="Left" Margin="319,17,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.816,0.154" Width="24"/>
+        <Label Content="R: " HorizontalAlignment="Left" Margin="473,17,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.816,0.154" Width="24"/>
     </Grid>
 
 </Window>
