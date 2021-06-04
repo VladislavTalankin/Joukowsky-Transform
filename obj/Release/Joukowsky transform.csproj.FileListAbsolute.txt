@@ -1,0 +1,15 @@
+D:\Joukowsky-Transform\bin\Release\Joukowsky transform.exe.config
+D:\Joukowsky-Transform\bin\Release\Joukowsky transform.exe
+D:\Joukowsky-Transform\bin\Release\Joukowsky transform.pdb
+D:\Joukowsky-Transform\obj\Release\Joukowsky transform.csprojAssemblyReference.cache
+D:\Joukowsky-Transform\obj\Release\MainWindow.g.cs
+D:\Joukowsky-Transform\obj\Release\App.g.cs
+D:\Joukowsky-Transform\obj\Release\Joukowsky transform_MarkupCompile.cache
+D:\Joukowsky-Transform\obj\Release\Joukowsky transform_MarkupCompile.lref
+D:\Joukowsky-Transform\obj\Release\MainWindow.baml
+D:\Joukowsky-Transform\obj\Release\Joukowsky transform.g.resources
+D:\Joukowsky-Transform\obj\Release\Joukowsky_transform.Properties.Resources.resources
+D:\Joukowsky-Transform\obj\Release\Joukowsky transform.csproj.GenerateResource.cache
+D:\Joukowsky-Transform\obj\Release\Joukowsky transform.csproj.CoreCompileInputs.cache
+D:\Joukowsky-Transform\obj\Release\Joukowsky transform.exe
+D:\Joukowsky-Transform\obj\Release\Joukowsky transform.pdb
