@@ -12,13 +12,13 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="1" Name="MainPanel"/>
-        <Button Content="Преобразовать" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click"/>
-        <TextBox Name="centerX" HorizontalAlignment="Left" Height="20" Margin="194,21,0,0" TextWrapping="Wrap" Text="-0,05" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="centerY" HorizontalAlignment="Left" Height="20" Margin="348,20,0,0" TextWrapping="Wrap" Text="-0,05" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="circleR"  HorizontalAlignment="Left" Height="20" Margin="502,21,0,0" TextWrapping="Wrap" Text="1,05" VerticalAlignment="Top" Width="120"/>
-        <Label Content="X: " HorizontalAlignment="Left" Margin="165,17,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.816,0.154" Width="24"/>
-        <Label Content="Y: " HorizontalAlignment="Left" Margin="319,17,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.816,0.154" Width="24"/>
-        <Label Content="R: " HorizontalAlignment="Left" Margin="473,17,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.816,0.154" Width="24"/>
+        <TextBox Name="centerX" HorizontalAlignment="Left" Height="20" Margin="36,18,0,0" TextWrapping="Wrap" Text="-0,05" VerticalAlignment="Top" Width="120" MouseWheel="centerX_MouseWheel"/>
+        <TextBox Name="centerY" HorizontalAlignment="Left" Height="20" Margin="190,17,0,0" TextWrapping="Wrap" Text="-0,05" VerticalAlignment="Top" Width="120" MouseWheel="centerY_MouseWheel"/>
+        <TextBox Name="circleR"  HorizontalAlignment="Left" Height="20" Margin="344,18,0,0" TextWrapping="Wrap" Text="1,05" VerticalAlignment="Top" Width="120" MouseWheel="circleR_MouseWheel"/>
+        <Label Content="X: " HorizontalAlignment="Left" Margin="7,14,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.816,0.154" Width="24"/>
+        <Label Content="Y: " HorizontalAlignment="Left" Margin="161,14,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.816,0.154" Width="24"/>
+        <Label Content="R: " HorizontalAlignment="Left" Margin="315,14,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.816,0.154" Width="24"/>
+        <Label Content="Scroll these parameters up and down" HorizontalAlignment="Left" Margin="469,13,0,0" VerticalAlignment="Top" Width="217"/>
     </Grid>
 
 </Window>
