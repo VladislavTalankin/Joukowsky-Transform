@@ -5,4 +5,4 @@ You must be careful with scales because when R=1 the function goes to singularit
 
 
 There are some screenshots
-![Alt text](https://sun9-36.userapi.com/impg/93GUmWH4a6zebl0jdiuoIs1z6oEH3SF_paFggw/tT70SEeApbU.jpg?size=1258x701&quality=96&sign=1fba03f42d4f1d696f80267a53277037&type=album)
+![Alt text](https://sun9-69.userapi.com/impg/uR6s9i7eGfDa3qIQ63LdetShuPQUD2EURW6z9g/MRwOTN-z3x8.jpg?size=1253x675&quality=96&sign=92eb253834652067a4ae2f5b746ee120&type=album)
